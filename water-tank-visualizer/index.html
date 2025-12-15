@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Water Tank Problem — Visualiser</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Water Tank Problem — Visualiser</h1>
+    <p class="lead">Enter an array of non-negative integers (block heights). The app computes trapped water and shows an SVG visualization.</p>
+
+    <label for="inputArray">Input array (comma separated):</label>
+    <input id="inputArray" type="text" placeholder="e.g. 0,4,0,0,0,6,0,6,4,0" value="0,4,0,0,0,6,0,6,4,0" />
+
+    <div class="controls">
+      <button id="computeBtn">Compute & Visualize</button>
+      <button id="randomBtn">Random Example</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="result">
+      <div>Trapped water (units): <strong id="waterUnits">-</strong></div>
+    </div>
+
+    <div id="vizContainer" class="viz"></div>
+
+    <footer>
+      <small>Built with Vanilla JS • SVG visualization • Algorithm: Two-pointer & per-index water overlay</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

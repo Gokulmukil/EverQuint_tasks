@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+agent.log
+examples/run_logs.jsonl
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
